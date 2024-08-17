@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>https://viblo.asia/p/vanilla-js-sliding-texts-RQqKLeQ0Z7z</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <style>
+    .wrapper {
+      display: flex;
+      justify-content: center;
+    }
+
+    .control {
+      display: inline-block;
+      transition: all 0.3s;
+      height: 75px;
+      overflow: hidden;
+      margin-left: 10px;
+    }
+
+    #slider div {
+      height: 75px;
+      line-height: 60px;
+      padding: 0 5px;
+    }
+
+    .animated {
+      transition: all 0.5s;
+      margin-top: -75px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper display-4 text-center mt-5">
+    Code đêm có thể khiến bạn bị
+    <div class="control">
+      <div id="slider" class="text-white bg-danger">
+        <div>trầm cảm</div>
+        <div>căng thẳng</div>
+        <div>gay</div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const wrapElement = document.querySelector('#slider')
+
+    function slidingText() {
+      wrapElement.classList.add('animated')
+      setTimeout(loopText, 500)
+    }
+
+    function loopText() {
+      const firstElement = document.querySelector('#slider div')
+      wrapElement.appendChild(firstElement)
+      wrapElement.classList.remove('animated')
+    }
+
+    setInterval(slidingText, 3000)
+  </script>
+  <a target="_blank" href="https://viblo.asia/p/vanilla-js-project-sliding-texts-RQqKLeQ0Z7z"
+    style="position: fixed; bottom: 10%; left: 5%;">
+    https://viblo.asia/p/vanilla-js-project-sliding-texts-RQqKLeQ0Z7z
+  </a>
+</body>
+
+</html>
